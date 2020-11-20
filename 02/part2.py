@@ -7,7 +7,7 @@ ribbon_needed = 0
 
 # Usage
 if len(sys.argv) != 2:
-	print("usage: part1.py input.txt")
+	print("usage: part2.py input.txt")
 	exit(1)
 
 # Read File
