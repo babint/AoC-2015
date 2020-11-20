@@ -57,12 +57,3 @@ with open(sys.argv[1]) as f:
 print(f'nice words: {len(nice_words)}')
 print(f'naughty words: {len(naught_words)}')
 print("\ndone.");
-
-
-# ---------------------------------------------------------
-# --- Day 5: Doesn't He Have Intern-Elves For This? ---
-# ---------------------------------------------------------
-# - wordlist filtering :: is word naught or nice?
-# -- 3 vowels requires
-# -- 1 character must repeat required
-# -- blacklist always: ab, cd, pq, or xy
