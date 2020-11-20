@@ -1,0 +1,18 @@
+--------
+Day 1
+--------
+- start at floor 0
+- (		go up one floor
+- ) 	godown one floor
+- track current floor
+- no upper or lower limits
+- track what step we first entered the basement
+
+--------
+Day 2
+--------
+- length (l), width (w), and height (h)
+- formula: 2*l*w + 2*w*h + 2*h*l + area of the smallest side
+-- 2x3x4 ==> 2*6 + 2*12 + 2*8 + 6 ==> 58
+- measurement in feet
+
