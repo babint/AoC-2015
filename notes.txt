@@ -15,4 +15,3 @@ Day 2
 - formula: 2*l*w + 2*w*h + 2*h*l + area of the smallest side
 -- 2x3x4 ==> 2*6 + 2*12 + 2*8 + 6 ==> 58
 - measurement in feet
-
