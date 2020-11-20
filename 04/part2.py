@@ -5,7 +5,7 @@ import hashlib
 
 # Usage
 if len(sys.argv) != 2:
-	print("usage: part1.py puzzle_input")
+	print("usage: part2.py puzzle_input")
 	exit(1)
 
 # Get Secret
