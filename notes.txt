@@ -1,6 +1,6 @@
---------
-Day 1
---------
+---------------------------------------------------------
+--- Day 1: Not Quite Lisp ---
+---------------------------------------------------------
 - start at floor 0
 - (		go up one floor
 - ) 	godown one floor
@@ -8,10 +8,64 @@ Day 1
 - no upper or lower limits
 - track what step we first entered the basement
 
---------
-Day 2
---------
+---------------------------------------------------------
+--- Day 2: I Was Told There Would Be No Math ---
+---------------------------------------------------------
 - length (l), width (w), and height (h)
 - formula: 2*l*w + 2*w*h + 2*h*l + area of the smallest side
 -- 2x3x4 ==> 2*6 + 2*12 + 2*8 + 6 ==> 58
 - measurement in feet
+- Ribbon ==> worry about the length of it. 
+-- smallest permiter on any side
+-- bow ==> equal to volume
+-- 2x3x4
+---- 2+2+3+3 = 10 feet of ribbon
+---- 2*3*4 = 24 feet for ribbon for bow
+
+
+---------------------------------------------------------
+--- Day 3: Perfectly Spherical Houses in a Vacuum ---
+---------------------------------------------------------
+- Starting location
+- Move one space: north (^), south (v), east (>), or west (<)
+- Delivers present, but not all moves to a location is a NEW location, moar presents for the same house
+- How many unique houses did santa hit?
+- Day 2 needs to round robin between santa and robo santa 
+
+
+---------------------------------------------------------
+--- Day 4: The Ideal Stocking Stuffer ---
+---------------------------------------------------------
+- AdventCoins Mining by doing a md5 hash collision starts with 'at least' 5 zeros
+-- md5(secret+int_num) = hash
+-- Find lowest positive int that generates a hash with 
+- secret: abcdef  ==> md5(abcdef609043) = 000001dbbfa....  ==> 609043 is int_num we need
+- secret: pqrstuv ==> md5(pqrstuv1048970) = 000006136ef... ==> 1048970 is the int_num we need
+
+
+---------------------------------------------------------
+--- Day 5: Doesn't He Have Intern-Elves For This? ---
+---------------------------------------------------------
+- wordlist filtering :: is word naught or nice?
+-- 3 vowels requires
+-- 1 character must repeat required
+-- blacklist always: ab, cd, pq, or xy
+- How many nice words do we have?
+- Day 2 Rules
+-- Find repeating two-letter sequences, must not overlap to count
+-- Find a char that repeats and only with a letter between it and its next occurrence
+
+---------------------------------------------------------
+--- Day 6: Probably a Fire Hazard ---
+---------------------------------------------------------
+- 1000x1000 matrix of lights that can be turned on/off
+- <instruction> <x>,<y> through <x2, y2>
+--- possible instructions: turn on, toggle, turn off
+--- turn on 0,0 through 999,999 ==> Turns on all 1000000 lights
+--- toggle 0,0 through 999,0 ==> toggle state of first row (1000 lights)
+--- turn off 499,499 through 500,500 - turn off middle four lights
+- parsing line throughts
+--- turn ==> next instruction is on/off
+--- toggle ==> next instruction is matrix start location
+--- rest is always 'though' and matrix end location
+- How many lights are lit?
